@@ -1,0 +1,65 @@
+module state_machine (
+    input clk,  // clock
+    input rst,  // reset
+    input full_adder_output[2],    // Output of full-adder, [carry-out, sum]
+    output led[8]
+  ) {
+
+  .clk(clk) {
+    .rst(rst) {
+      fsm state = {INITIAL_STATE,CORRECT_OUTPUT, WRONG_OUTPUT};   // Finite State machine
+      dff counter[28]; // Counter to keep count from 0 to 7 in 3 bits
+    }
+  }
+  
+  always {
+    // Default led value
+    led = 8h0;
+    
+    case(state.q){
+      state.INITIAL_STATE:
+        // Do not check if output is correct until state 001 is first reached is reached
+        if (counter.q[25+:3] == 3b001) {
+          state.d = state.CORRECT_OUTPUT;
+          led = c{counter.q[25+:3],5x{0}};
+        }
+        counter.d = counter.q+1;
+      state.CORRECT_OUTPUT:
+        //Checks if the last 22 bits of the counter is 100...00, upon which it checks if the adder output is valid
+        // This check is done 0.671 seconds after the input changes, to allow for propagation delay
+        if (counter.q[24-:25] == c{2b11,23x{1b0}}){
+          //Checks if full_adder_output is correct
+          //if (2b00 + counter.q[25] + counter.q[26] + counter.q[27] != full_adder_output){
+          //  state.d = state.WRONG_OUTPUT;
+          //}
+          if(counter.q[25+:3]==3b000){
+              if (full_adder_output!=2b00){
+                state.d = state.WRONG_OUTPUT;
+              }
+          } else if (counter.q[25+:3]==3b100 || counter.q[25+:3]==3b010 || counter.q[25+:3]==3b001){
+            if (full_adder_output!=2b01){
+                state.d = state.WRONG_OUTPUT;
+            }
+          } else if (counter.q[25+:3]==3b011 || counter.q[25+:3]==3b101 || counter.q[25+:3]==3b110){
+            if (full_adder_output!=2b10){
+                state.d = state.WRONG_OUTPUT;
+            }
+          } else if (counter.q[25+:3]== 3b111){
+            if (full_adder_output != 2b11){
+              state.d = state.WRONG_OUTPUT;
+            }
+          }
+          
+        }
+        
+        led = c{counter.q[25+:3],5x{0}};
+        counter.d = counter.q+1;
+      state.WRONG_OUTPUT:
+        //Lights up all LEDs permanently to indicate that output is incorrect
+        led = 8x{1};
+        //led = c{full_adder_output,6x{0}};
+
+            
+    }
+  }
+}

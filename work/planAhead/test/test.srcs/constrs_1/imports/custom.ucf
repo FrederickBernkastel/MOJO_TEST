@@ -1,0 +1,6 @@
+NET "out_pins<0>" LOC = P51 | IOSTANDARD = LVTTL;
+NET "out_pins<1>" LOC = P33 | IOSTANDARD = LVTTL;
+NET "out_pins<2>" LOC = P24 | IOSTANDARD = LVTTL;
+
+NET "in_pins<0>" LOC = P17 | IOSTANDARD = LVTTL | PULLUP;
+NET "in_pins<1>" LOC = P15 | IOSTANDARD = LVTTL | PULLUP;
