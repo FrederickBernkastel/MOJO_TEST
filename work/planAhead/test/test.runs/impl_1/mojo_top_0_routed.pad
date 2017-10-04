@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Oct 02 17:23:02 2017
+Tue Oct 03 21:59:30 2017
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -26,16 +26,16 @@ P4|||VCCO_3|||3|||||3.30||||
 P5||IOBS|IO_L52N_3|UNUSED||3|||||||||
 P6||IOBM|IO_L52P_3|UNUSED||3|||||||||
 P7||IOBS|IO_L51N_3|UNUSED||3|||||||||
-P8||IOBM|IO_L51P_3|UNUSED||3|||||||||
+P8|in_pins[1]|IOB|IO_L51P_3|INPUT|LVTTL|3||||NONE||LOCATED|NO|NONE|
 P9||IOBS|IO_L50N_3|UNUSED||3|||||||||
 P10||IOBM|IO_L50P_3|UNUSED||3|||||||||
 P11||IOBS|IO_L49N_3|UNUSED||3|||||||||
 P12||IOBM|IO_L49P_3|UNUSED||3|||||||||
 P13|||GND||||||||||||
 P14||IOBS|IO_L44N_GCLK20_3|UNUSED||3|||||||||
-P15|in_pins[1]|IOB|IO_L44P_GCLK21_3|INPUT|LVTTL|3|||PULLUP|NONE||LOCATED|NO|NONE|
+P15|in_pins[0]|IOB|IO_L44P_GCLK21_3|INPUT|LVTTL|3||||NONE||LOCATED|NO|NONE|
 P16||IOBS|IO_L43N_GCLK22_IRDY2_3|UNUSED||3|||||||||
-P17|in_pins[0]|IOB|IO_L43P_GCLK23_3|INPUT|LVTTL|3|||PULLUP|NONE||LOCATED|NO|NONE|
+P17||IOBM|IO_L43P_GCLK23_3|UNUSED||3|||||||||
 P18|||VCCO_3|||3|||||3.30||||
 P19|||VCCINT||||||||1.2||||
 P20|||VCCAUX||||||||3.3||||

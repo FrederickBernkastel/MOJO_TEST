@@ -12,7 +12,7 @@ module mojo_top (
     output avr_rx,          // AVR RX (FPGA TX)
     input avr_rx_busy,      // AVR RX buffer full
     output out_pins[3],     // Output to the pins 51,35,30 (A,B,Cin)
-    input in_pins[2]        // Input to the pins 50, 32 (Cout, Output)
+    input in_pins[2]        // Input to the pins 15, 8 (Output,Cout)
   ) {
   
   sig rst;                  // reset signal
@@ -23,7 +23,6 @@ module mojo_top (
     reset_conditioner reset_cond;
     .rst(rst) {
 	      state_machine myMachine;
-      
 	    }
   }
   
@@ -31,7 +30,7 @@ module mojo_top (
     reset_cond.in = ~rst_n;                // input raw inverted reset signal
     rst = reset_cond.out;                  // conditioned reset
     
-    myMachine.full_adder_output = in_pins; //Input to state machine
+    myMachine.full_adder_output = in_pins; // Input to state machine
     led = myMachine.led;                   // obtain output from state machine
     out_pins = myMachine.led[5+:3];        // Output pins sync to flip-flop
     

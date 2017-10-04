@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Mon Oct 02 17:22:51 2017">
+  <application stringID="NgdBuild" timeStamp="Tue Oct 03 21:59:16 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -85,7 +85,6 @@
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="27"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="11"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUFT" value="6"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_PULLUP" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_TS_TIMESPEC" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="28"/>

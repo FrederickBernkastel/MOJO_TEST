@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Oct 02 17:22:57 2017
+// Written by: Map P.20131013 on Tue Oct 03 21:59:23 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -21,9 +21,9 @@ COMP "avr_tx" LOCATE = SITE "P55" LEVEL 1;
 COMP "led[5]" LOCATE = SITE "P126" LEVEL 1;
 COMP "led[6]" LOCATE = SITE "P124" LEVEL 1;
 COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
-COMP "in_pins[0]" LOCATE = SITE "P17" LEVEL 1;
+COMP "in_pins[0]" LOCATE = SITE "P15" LEVEL 1;
 COMP "led[7]" LOCATE = SITE "P123" LEVEL 1;
-COMP "in_pins[1]" LOCATE = SITE "P15" LEVEL 1;
+COMP "in_pins[1]" LOCATE = SITE "P8" LEVEL 1;
 COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
 TIMEGRP clk = BEL "myMachine/M_counter_q_27" BEL "myMachine/M_counter_q_26"
         BEL "myMachine/M_counter_q_25" BEL "myMachine/M_counter_q_24" BEL

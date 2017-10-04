@@ -25,7 +25,7 @@ module state_machine (
         }
         counter.d = counter.q+1;
       state.CORRECT_OUTPUT:
-        //Checks if the last 22 bits of the counter is 100...00, upon which it checks if the adder output is valid
+        //Checks if the last 25 bits of the counter is 100...00, upon which it checks if the adder output is valid
         // This check is done 0.671 seconds after the input changes, to allow for propagation delay
         if (counter.q[24-:25] == c{2b11,23x{1b0}}){
           //Checks if full_adder_output is correct

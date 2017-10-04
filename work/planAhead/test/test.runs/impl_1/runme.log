@@ -33,7 +33,7 @@ NGDBUILD Design Results Summary:
   Number of warnings:   0
 
 Writing NGD file "mojo_top_0.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
+Total REAL time to NGDBUILD completion:  6 sec
 Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "mojo_top_0.bld"...
@@ -66,51 +66,51 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 3 secs 
-Total CPU  time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:c3dd8e4) REAL time: 3 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:c4029bc) REAL time: 4 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:c3dd8e4) REAL time: 3 secs 
+Phase 2.7  Design Feasibility Check (Checksum:c4029bc) REAL time: 4 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:c3dd8e4) REAL time: 3 secs 
+Phase 3.31  Local Placement Optimization (Checksum:c4029bc) REAL time: 4 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:ae4e844) REAL time: 5 secs 
+(Checksum:ae7391c) REAL time: 5 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:ae4e844) REAL time: 5 secs 
+Phase 5.36  Local Placement Optimization (Checksum:ae7391c) REAL time: 5 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:ae4e844) REAL time: 5 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:ae7391c) REAL time: 5 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:ae4e844) REAL time: 5 secs 
+Phase 7.3  Local Placement Optimization (Checksum:ae7391c) REAL time: 5 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:ae4e844) REAL time: 5 secs 
+Phase 8.5  Local Placement Optimization (Checksum:ae7391c) REAL time: 5 secs 
 
 Phase 9.8  Global Placement
-....
-....
-Phase 9.8  Global Placement (Checksum:1a80dbb2) REAL time: 5 secs 
+..........
+..........
+Phase 9.8  Global Placement (Checksum:1964f1a) REAL time: 5 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:1a80dbb2) REAL time: 5 secs 
+Phase 10.5  Local Placement Optimization (Checksum:1964f1a) REAL time: 5 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:c76f071a) REAL time: 5 secs 
+Phase 11.18  Placement Optimization (Checksum:1e1c132a) REAL time: 5 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:c76f071a) REAL time: 5 secs 
+Phase 12.5  Local Placement Optimization (Checksum:1e1c132a) REAL time: 5 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:c76f071a) REAL time: 5 secs 
+Phase 13.34  Placement Validation (Checksum:1e1c132a) REAL time: 5 secs 
 
 Total REAL time to Placer completion: 5 secs 
 Total CPU  time to Placer completion: 5 secs 
@@ -186,9 +186,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.65
 
-Peak Memory Usage:  297 MB
-Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion (all processors):   5 secs 
+Peak Memory Usage:  298 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion (all processors):   6 secs 
 
 Mapping completed.
 See MAP report file "mojo_top_0.mrp" for details.
@@ -290,29 +290,29 @@ WARNING:Par:288 - The signal cclk_IBUF has no load.  PAR will not attempt to rou
 Starting Multi-threaded Router
 
 
-Phase  1  : 154 unrouted;      REAL time: 3 secs 
+Phase  1  : 154 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 114 unrouted;      REAL time: 3 secs 
+Phase  2  : 114 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 18 unrouted;      REAL time: 3 secs 
+Phase  3  : 21 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 18 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  4  : 21 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion (all processors): 3 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion (all processors): 4 secs 
 
 Generating "PAR" statistics.
 
@@ -323,7 +323,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X2Y11| No   |   10 |  0.085     |  1.507      |
+|           clk_BUFGP | BUFGMUX_X2Y11| No   |   10 |  0.074     |  1.499      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -343,7 +343,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH | SETUP       |    16.210ns|     3.790ns|       0|           0
+  TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH | SETUP       |    15.813ns|     4.187ns|       0|           0
    50%                                      | HOLD        |     0.439ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
@@ -357,8 +357,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 6 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 3 secs 
-Total CPU time to PAR completion (all processors): 3 secs 
+Total REAL time to PAR completion: 5 secs 
+Total CPU time to PAR completion (all processors): 5 secs 
 
 Peak Memory Usage:  278 MB
 
@@ -383,13 +383,13 @@ Loading device for application Rf_Device from file '6slx9.nph' in environment
 C:\Xilinx\14.7\ISE_DS\ISE\.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 
-Analysis completed Mon Oct 02 17:23:06 2017
+Analysis completed Tue Oct 03 21:59:34 2017
 --------------------------------------------------------------------------------
 
 Generating Report ...
 
 Number of warnings: 0
-Total time: 2 secs 
+Total time: 3 secs 
 
 *** Running xdl
     with args -secure -ncd2xdl -nopips "mojo_top_0_routed.ncd" "mojo_top_0_routed.xdl"
