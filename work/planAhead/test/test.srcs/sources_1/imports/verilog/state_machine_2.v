@@ -36,29 +36,7 @@ module state_machine_2 (
       end
       CORRECT_OUTPUT_state: begin
         if (M_counter_q[0+24-:25] == 25'h1800000) begin
-          if (M_counter_q[25+2-:3] == 3'h0) begin
-            if (full_adder_output != 2'h0) begin
-              M_state_d = WRONG_OUTPUT_state;
-            end
-          end else begin
-            if (M_counter_q[25+2-:3] == 3'h4 || M_counter_q[25+2-:3] == 3'h2 || M_counter_q[25+2-:3] == 3'h1) begin
-              if (full_adder_output != 2'h1) begin
-                M_state_d = WRONG_OUTPUT_state;
-              end
-            end else begin
-              if (M_counter_q[25+2-:3] == 3'h3 || M_counter_q[25+2-:3] == 3'h5 || M_counter_q[25+2-:3] == 3'h6) begin
-                if (full_adder_output != 2'h2) begin
-                  M_state_d = WRONG_OUTPUT_state;
-                end
-              end else begin
-                if (M_counter_q[25+2-:3] == 3'h7) begin
-                  if (full_adder_output != 2'h3) begin
-                    M_state_d = WRONG_OUTPUT_state;
-                  end
-                end
-              end
-            end
-          end
+          
         end
         led = {M_counter_q[25+2-:3], 5'h00};
         M_counter_d = M_counter_q + 1'h1;

@@ -29,9 +29,6 @@ module state_machine (
         // This check is done 0.671 seconds after the input changes, to allow for propagation delay
         if (counter.q[24-:25] == c{2b11,23x{1b0}}){
           //Checks if full_adder_output is correct
-          //if (2b00 + counter.q[25] + counter.q[26] + counter.q[27] != full_adder_output){
-          //  state.d = state.WRONG_OUTPUT;
-          //}
           if(counter.q[25+:3]==3b000){
               if (full_adder_output!=2b00){
                 state.d = state.WRONG_OUTPUT;
@@ -57,7 +54,6 @@ module state_machine (
       state.WRONG_OUTPUT:
         //Lights up all LEDs permanently to indicate that output is incorrect
         led = 8x{1};
-        //led = c{full_adder_output,6x{0}};
 
             
     }
