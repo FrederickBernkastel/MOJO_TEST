@@ -1,8 +1,8 @@
 INTSTYLE=pa
-INFILE=C:\Users\Frederic\Desktop\Computational Structures\MOSFET\New folder\test\work\planAhead\test\test.runs\impl_1\mojo_top_0_routed.ncd
-OUTFILE=C:\Users\Frederic\Desktop\Computational Structures\MOSFET\New folder\test\work\planAhead\test\test.runs\impl_1\mojo_top_0.bit
+INFILE=C:\Users\Frederic\Desktop\Computational Structures\MOSFET\Mini Hardware Project\test\work\planAhead\test\test.runs\impl_1\mojo_top_0_routed.ncd
+OUTFILE=C:\Users\Frederic\Desktop\Computational Structures\MOSFET\Mini Hardware Project\test\work\planAhead\test\test.runs\impl_1\mojo_top_0.bit
 FAMILY=Spartan6
 PART=xc6slx9-2tqg144
-WORKINGDIR=C:\Users\Frederic\Desktop\Computational Structures\MOSFET\New folder\test\work\planAhead\test\test.runs\impl_1
+WORKINGDIR=C:\Users\Frederic\Desktop\Computational Structures\MOSFET\Mini Hardware Project\test\work\planAhead\test\test.runs\impl_1
 LICENSE=WebPack
 USER_INFO=211399234_0_0_970

@@ -7,7 +7,7 @@ module state_machine (
 
   .clk(clk) {
     .rst(rst) {
-      fsm state = {INITIAL_STATE,CORRECT_OUTPUT, WRONG_OUTPUT};   // Finite State machine
+      fsm state = {CORRECT_OUTPUT, WRONG_OUTPUT};   // Finite State machine
       dff counter[28]; // Counter to keep count from 0 to 7 in 3 bits
     }
   }
@@ -17,13 +17,7 @@ module state_machine (
     led = 8h0;
     
     case(state.q){
-      state.INITIAL_STATE:
-        // Do not check if output is correct until state 001 is first reached is reached
-        if (counter.q[25+:3] == 3b001) {
-          state.d = state.CORRECT_OUTPUT;
-          led = c{counter.q[25+:3],5x{0}};
-        }
-        counter.d = counter.q+1;
+      
       state.CORRECT_OUTPUT:
         //Checks if the last 25 bits of the counter is 100...00, upon which it checks if the adder output is valid
         // This check is done 0.671 seconds after the input changes, to allow for propagation delay
